@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+## --------------- OTHER -----------------
+
+# vim temporary files
+**.swo
+**.swp
+
+# kernprof profiling files
+**.lprof
