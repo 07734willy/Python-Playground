@@ -1,2 +1,3 @@
 # Python-Playground
-A collection of small, self-contained OOP python projects, and scripting problems / solutions.
+
+This repo serves to organize a collection of small, self-contained python projects used to demonstate OOP principles, and solutions to leetcode/codechef/projecteuler-style questions. 
