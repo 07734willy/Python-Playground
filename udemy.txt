@@ -1,0 +1,65 @@
+
+https://www.udemy.com/complete-python-bootcamp/
+
+Object Oriented Programming - Class Object Attributes and Methods
+17:18
+Object Oriented Programming - Inheritance and Polymorphism
+16:45
+
+
+Pip Install and PyPi
+07:46
+Modules and Packages
+11:39
+
+
+Errors and Exception Handling
+17:19
+
+https://www.udemy.com/python-for-finance-investment-fundamentals-data-analytics/
+
+Object Oriented Programming
+Preview05:00
+Object Oriented Programming - Quiz
+2 questions
+Modules and Packages
+01:05
+Modules - Quiz
+2 questions
+
+https://www.udemy.com/python-for-finance-and-trading-algorithms/
+
+Welcome to NumPy
+00:23
+Introduction to NumPy
+01:37
+
+Welcome to Pandas
+Preview00:22
+Introduction to Pandas
+02:39
+Series
+06:58
+DataFrames
+15:34
+
+
+https://www.udemy.com/the-python-mega-course/
+
+Dates and Times
+08:32
+The "with" Context Manager
+03:21
+
+Object Oriented Programming Explained
+04:59
+Turning this Application into OOP Style, Part 1
+13:01
+Turning this Application into OOP Style, Part 2
+14:05
+Creating a Bank Account Object
+21:06
+Inheritance
+12:08
+OOP Glossary
+08:12
