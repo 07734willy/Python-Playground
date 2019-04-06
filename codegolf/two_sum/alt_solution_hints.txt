@@ -1,0 +1,21 @@
+List comprehensions will carry you a long way here. Just as a refresher
+
+out = []
+for element in iterable:
+    output.append(element + 5)
+
+-can be represented as a list comprehension by:
+
+out = [element + 5 for element in iterable]
+
+Also worth noting is the `enumerate` function, which will return each element in a tuple with its index. So
+
+names = ["foo", "bar"]
+indices = enumerate(names)
+print(list(indices))
+# prints `[(0, 'foo'), (1, 'bar')]`
+
+This can be used in a for loop (or list comprehension) as such:
+
+for idx, name in enumerate(names):
+	print(name + " is at: " + idx)
