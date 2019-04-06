@@ -1,0 +1,4 @@
+Its a lot easier to handle rearrangement on strings. Maybe convert to a string and use some slicing, then convert back and handle other conditions and edge cases.
+
+For reference, `string[a:b:c]` starts at `a`, ends before `b`, counting by `c` (stride). Negative stride reverses direction, so `"foobar"[::-1]` yields `"raboof"`.
+
