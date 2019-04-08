@@ -5,6 +5,7 @@ def make_dict(keys, values):
     for i in range(min(len(keys), len(values))):
         out[keys[i]] = values[i]
     return out
+# HINT: there's special syntax for a dict comprehension
 
 
 # Takes a 2D matrix (any size), and returns a plain list of elements that
@@ -29,6 +30,7 @@ def matrix_transpose(matrix):
         elem1 = matrix[1][i]
         out.append([elem0, elem1])
     return out
+# HINT: You'll need to use `zip()`
 
 
 # Returns a list taking the max out of every two numbers
@@ -38,6 +40,7 @@ def max_every_other(numbers):
     for i in range(0, len(numbers), 2):
         out.append(max(numbers[i], numbers[i+1]))
     return out
+# HINT: again, `zip()`
 
 
 # Forms lists of repeating elements, from a list of elements. Ex:
@@ -59,6 +62,10 @@ def power_of_twos():
     while True:
         yield 2 ** start
         start += 1
+# HINT: this is a generator. Generator comprehensions use `()` instead 
+#       of `[]`. Additionally, you'll want `count()` from `itertools`
+#       `from itertools import count` at the top of the file
+
 
 # Takes a matrix, and return a string in csv format
 def make_csv(matrix):
@@ -73,3 +80,6 @@ def make_csv(matrix):
                 out += ", "
             out += str(matrix[i][j])
     return out
+# HINT: you can use str.join() to join a bunch of strings into one.
+#       "RR".join(["foo", "bar", "fizz", "buzz"]) yields
+#       "fooRRbarRRfizzRRbuzz"
