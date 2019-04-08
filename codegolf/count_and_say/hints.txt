@@ -1,0 +1,15 @@
+There is a python function `groupby` in the `itertools` module, which will group similar values (digits) into tuples [(digit, iterable_of_digit), (digit, iterable_of_digit) ...]. This can really make things easier.
+
+from itertools import grouby
+
+foo = [1, 1, 3, 2, 2]
+groups = groupby(foo)
+print(list(groups))
+# prints [(1, <itertools._grouper object at 0x7fa159d3d2b0>), (3, <itertools._grouper object at 0x7fa159d3d3c8>), (2, <itertools._grouper object at 0x7fa159677828>)]
+
+groups = groupby(foo)
+print([(digit, list(values)) for digit, values in groups])
+# prints [(1, [1, 1]), (3, [3]), (2, [2, 2])]
+
+
+Secondly, the problem lends itself nicely to recursion. While you could loop for the same effect, its shorter and less error-prone to use recursion.

@@ -11,6 +11,7 @@ def find(numbers, target):
 				return [numbers.index(number), numbers.index(num)]
 			else:
 				counter += 1
+				print(comparison)
 
 
-find([2, 7, 11, 15],9)
+print(find([1, 2, 7, 11, 15],9))
