@@ -4,6 +4,7 @@ def do_something(x, y):
 
 #answer:
 do_something = lambda x,y: x + y
+#nothing to change
 
 #2
 def drop_value(numbers, value):
@@ -14,7 +15,7 @@ numbers = [1,2,3]
 target = [1]
 
 drop_value = list(filter(lambda value: value not in target, numbers))
-
+#nothing to change
 
 #3
 def find_max_vals(matrix):
@@ -23,12 +24,18 @@ def find_max_vals(matrix):
 #answer:
 find_max_vals = list(map(lambda matrix: max(matrix),[[1,2,3], [4,5,6]]))
 
+def find_max_vals(matrix):
+    return list(map(max, matrix))
+
 #4
 def get_digits(number):
     return [int(digit) for digit in str(number)]
 
 #answer:
 get_digits = list(map(lambda number: int(number), list(str(235))))
+
+def get_digits(number):
+    return map(int, number)
 
 #5
 def sort_lists(*lists):
@@ -39,6 +46,8 @@ def sort_lists(*lists):
 #answer:
 sort_lists = lambda *lists: sorted(lists)
 
+def sort_lists(*lists):
+    return list(map(sorted, lists))
 
 #6
 def get_abs_min(numbers):
@@ -60,6 +69,8 @@ def get_abs_min(numbers):
 #answer:
 get_abs_min = lambda numbers: min(abs(num) for num in numbers)
 
+def get_abs_min(numbers):
+    return min(numbers, key=abs)
 
 #7
 def max_row_sum(matrix):
@@ -68,23 +79,15 @@ def max_row_sum(matrix):
 #answer:
 max_row_sum = lambda matrix: max(sum(array) for array in matrix)
 
+def max_row_sum(matrix):
+    return max(matrix, key=sum)
 
 #8
 def count_nonzero(numbers):
     return len([num for num in numbers if num != 0])
 
+def count_nonzero(numbers):
+    return sum(map(bool, numbers))
+
 #my 'genius' answer
 count_nonzero = lambda numbers: len(numbers) - numbers.count(0)
-
-
-
-
-
-
-
-
-
-
-
-
-
