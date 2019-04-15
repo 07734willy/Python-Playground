@@ -80,3 +80,12 @@ def power_of_twos():
 # I don't really understand #7 :( 
 
 
+Input: J = "aA", S = "aAAbbbb"
+Output: 3
+
+
+def gemstones(J,S):
+	for letter in J:
+		print(sum(S.count(letter)))
+
+
