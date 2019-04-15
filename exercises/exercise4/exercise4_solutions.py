@@ -11,6 +11,11 @@ def subtraction(numbersA, numbersB):
 def subtraction(numbersA, numbersB):
 	return ([i[0] - i[1] for i in list(zip(numbersA, numbersB))])
 
+# answer
+def subtraction(numbersA, numbersB):
+    return [a - b for a, b in zip(numbersA, numbersB)]
+
+
 #2
 
 # TODO use map and str- no comprehensions
@@ -20,6 +25,11 @@ def letters_in_string(word):
 #answer (seriously I find the 'use str' really weird)
 def letters_in_string(word):
     return word + ''
+
+# admittedly bad example, trying to get you to use map(some_func, input) rather than
+# [func(x) for x in input]
+def letters_in_string(word):
+    return map(str, word)
 
 print(list(map(letters_in_string, 'meow')))
 
@@ -54,6 +64,7 @@ def calculat32(*vargs):
 calculate(calculat32(1,2,3))
 #output [9,16,25]
 
+# nothing to change
 
 #4
 # TODO use the short-circuiting behavior demonstated in the following function to the `ternary` into
@@ -75,6 +86,10 @@ def ternary(varA, varB, varC):
     return varB if varB else (varC if varC else varA)
 
 
+# was looking for
+def ternary(varA, varB, varC):
+    return varB or varC or varA
+
 #5
 # TODO return true is any of the values in `numbers` are greater than 3
 #      use `any()` and a comprehension
@@ -88,6 +103,10 @@ def any_above_three(numbers):
 def any_above_three(numbers):
 	return any([num for num in numbers if num >3])
 
+# you can skip the intermediate list
+def any_above_three(numbers):
+    return any(num for num in numbers if num > 3)
+
 #6
 # TODO same behavior, except if all values are larger than 3
 # hint: `all`
@@ -100,6 +119,12 @@ def all_above_three(numbers):
 #answer
 def all_above_three(numbers):
 	return all([num > 3 for num in numbers])
+
+#answer
+def all_above_three(numbers):
+	return all(num for num in numbers if num <= 3)
+
+
 
 #7
 # use the following example to see how for-else is used, for the next problem
@@ -128,6 +153,14 @@ def index_of_same_element(numsA, numsB):
     else:
     	raise Exception("No pairs found!")
 
+# you shouldn't cast to a list and then index-  just use  `for a, b in ...`
+def index_of_same_element(numsA, numsB):
+    for idx, (a, b) in enumerate(zip(numsA, numsB)):
+    	if a == b:
+    	    return idx
+    else:
+    	raise Exception("No pairs found!")
+
 
 
 #8
@@ -149,6 +182,13 @@ def random_thing(numbers, const):
 def random_thing(numbers, const):
 	result = any(3 < num < 12 for num in numbers); temp = const + max(numbers)   
 	return result, temp
+
+# the target was
+def random_thing(numbers, const):
+    for num in numbers:
+        if 3 < num < 12: return True
+    temp = const + max(numbers); return temp
+
 
  
 #9            
@@ -173,6 +213,10 @@ def digit_sort(digits):
 
 	return int(result)
 
+# one-liner
+def digit_sort(digits):
+    return sorted(digits, key="1435972806".index)
+
 
 #10
 # TODO do this, but without using the word `list`, and without using comprehensions.  You'll need to use the
@@ -185,6 +229,6 @@ def set_to_list(input_set):
 def set_to_list(input_set):
  	return [*input_set]  
 	
-
+# exactly what I intended / nothing to change
 
 
