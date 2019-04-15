@@ -3,3 +3,6 @@ if __name__ == "__main__":
 
 class Website(object):
 	url =  "www.joycelandscaping.com"
+
+	def main():
+		pass
